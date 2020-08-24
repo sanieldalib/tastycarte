@@ -6,73 +6,6 @@
   <title>Tastycarte - Online Ordering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A corporate Bootstrap theme by Medium Rare">
-  <style>
-    @keyframes hideLoader {
-      0% {
-        width: 100%;
-        height: 100%;
-      }
-
-      100% {
-        width: 0;
-        height: 0;
-      }
-    }
-
-    body>div.loader {
-      position: fixed;
-      background: white;
-      width: 100%;
-      height: 100%;
-      z-index: 1071;
-      opacity: 0;
-      transition: opacity .5s ease;
-      overflow: hidden;
-      pointer-events: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    body:not(.loaded)>div.loader {
-      opacity: 1;
-    }
-
-    body:not(.loaded) {
-      overflow: hidden;
-    }
-
-    body.loaded>div.loader {
-      animation: hideLoader .5s linear .5s forwards;
-    }
-
-    /* Typing Animation */
-    .loading-animation {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      animation: typing 1s linear infinite alternate;
-      position: relative;
-      left: -12px;
-    }
-
-    @keyframes typing {
-      0% {
-        background-color: rgba(100, 100, 100, 1);
-        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
-      }
-
-      25% {
-        background-color: rgba(100, 100, 100, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 2), 24px 0px 0px 0px rgba(100, 100, 100, 0.2);
-      }
-
-      75% {
-        background-color: rgba(100, 100, 100, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba(100, 100, 100, 0.2), 24px 0px 0px 0px rgba(100, 100, 100, 1);
-      }
-    }
-  </style>
   <script type="text/javascript">
     window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
   </script>
@@ -85,6 +18,7 @@
   <div class="loader">
     <div class="loading-animation"></div>
   </div>
+
   <div class="navbar-container bg-primary-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary-3" data-sticky="top">
       <div class="container">
@@ -106,7 +40,7 @@
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
           <div class="d-flex flex-column flex-sm-row justify-content-center mt-4">
-            <a href="#" class="btn btn-lg btn-primary mx-2 mb-2 mb-sm-0">Get Started</a>
+            <a href="#getting-started" class="btn btn-lg btn-primary mx-2 mb-2 mb-sm-0">Get Started</a>
             <a href="https://demo.tastycarte.com" target="_blank" class="btn btn-lg btn-outline-primary mx-2">
               <span>View Demo</span>
             </a>
@@ -152,9 +86,8 @@
             <img class="icon bg-primary" src="https://leap.mediumra.re/assets/img/icons/theme/shopping/box-2.svg"
               alt="icon" data-inject-svg />
           </div>
-          <h4>NPM Package</h4>
-          <p class="lead mx-xl-3">Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+          <h4>All Yours</h4>
+          <p class="lead mx-xl-3">Our ordering platforms are completely white-labeled so that you can show off your business.</p>
         </div>
       </div>
     </div>
@@ -519,10 +452,10 @@
       </div>
     </div>
   </section>
-  <section class="bg-primary-2-alt">
+  <section class="bg-primary-2-alt" id='getting-started'>
     <div class="container pt-3 pb-0">
       <div class="row justify-content-center text-center mb-6">
-        <div class="col-xl-8 col-lg-9">
+        <div class="col-xl-8 col-lg-9" data-aos="fade-up" data-aos-delay="100">
           <h2 class="display-4 mx-xl-6">Get online ordering for your business today!</h2>
           <p class="lead">
             Fill out the following information and a member of the Tastycarte team will reach out within 24 hours!
@@ -530,7 +463,7 @@
         </div>
       </div>
       <div class="row">
-          <div class="container contact-form">
+          <div class="container contact-form" data-aos="fade-up" data-aos-delay="200">
             <div class="row justify-content-center">
               <div class="col-md-9 col-lg-8 col-xl-6" id='form-container'>
                 <form id='get-started-form' data-form-email validate>
