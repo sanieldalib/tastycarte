@@ -6,12 +6,13 @@
   <title>Tastycarte - Online Ordering</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A corporate Bootstrap theme by Medium Rare">
+  <script src="https://kit.fontawesome.com/b02fd03e0f.js" crossorigin="anonymous"></script>
   <script type="text/javascript">
     window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
   </script>
-  <link href="https://leap.mediumra.re/assets/css/theme-desktop-app.min.css" rel="stylesheet" type="text/css"
+  <link href="assets/css/theme-desktop-app.min.css" rel="stylesheet" type="text/css"
     media="all" />
-  <link href='style.css' rel="stylesheet" type="text/css" media="all">
+  <link href='assets/css/style.css' rel="stylesheet" type="text/css" media="all">
 </head>
 
 <body>
@@ -32,13 +33,14 @@
     </nav>
   </div>
 
-  <section class="bg-primary-3 text-light text-center has-divider header-desktop-app">
+  <section class="bg-primary-3 text-light text-center header-desktop-app">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-8 col-md-9">
           <h1 class="display-4">Elevate your ordering.</h1>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <p class="lead">
+            Tastycarte's predictable pricing, local team, and easy to integrate technology will help you take charge of
+            your restaurant.</p>
           <div class="d-flex flex-column flex-sm-row justify-content-center mt-4">
             <a href="#getting-started" class="btn btn-lg btn-primary mx-2 mb-2 mb-sm-0">Get Started</a>
             <a href="https://demo.tastycarte.com" target="_blank" class="btn btn-lg btn-outline-primary mx-2">
@@ -53,9 +55,6 @@
         </div>
       </div>
     </div>
-    <div class="divider">
-      <img src="https://leap.mediumra.re/assets/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
-    </div>
   </section>
   <section>
     <div class="container">
@@ -67,27 +66,26 @@
       <div class="row text-center">
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="icon-round bg-primary mx-auto mb-4">
-            <i data-feather="power"></i>
+            <i class="fas fa-cloud fa-2x"></i>
           </div>
-          <h4>Authentication</h4>
+          <h4>Fully Managed</h4>
           <p class="lead mx-xl-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="icon-round bg-primary mx-auto mb-4">
-            <img class="icon bg-primary" src="https://leap.mediumra.re/assets/img/icons/theme/code/code.svg" alt="icon"
-              data-inject-svg />
+            <i class="fas fa-map-marked fa-2x"></i>
           </div>
-          <h4>Developer First</h4>
-          <p class="lead mx-xl-3">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.</p>
+          <h4>Locally Based</h4>
+          <p class="lead mx-xl-3">We’re here to serve the Southern California community with support you can count on.
+          </p>
         </div>
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
           <div class="icon-round bg-primary mx-auto mb-4">
-            <img class="icon bg-primary" src="https://leap.mediumra.re/assets/img/icons/theme/shopping/box-2.svg"
-              alt="icon" data-inject-svg />
+            <i class="fas fa-tags fa-2x"></i>
           </div>
           <h4>All Yours</h4>
-          <p class="lead mx-xl-3">Our ordering platforms are completely white-labeled so that you can show off your business.</p>
+          <p class="lead mx-xl-3">Our ordering platforms are completely white-labeled so that you can show off your
+            restaurant.</p>
         </div>
       </div>
     </div>
@@ -456,65 +454,66 @@
     <div class="container pt-3 pb-0">
       <div class="row justify-content-center text-center mb-6">
         <div class="col-xl-8 col-lg-9" data-aos="fade-up" data-aos-delay="100">
-          <h2 class="display-4 mx-xl-6">Get online ordering for your business today!</h2>
+          <h2 class="display-4 mx-xl-6">Get online ordering for your restaurant today!</h2>
           <p class="lead">
             Fill out the following information and a member of the Tastycarte team will reach out within 24 hours!
           </p>
         </div>
       </div>
       <div class="row">
-          <div class="container contact-form" data-aos="fade-up" data-aos-delay="200">
-            <div class="row justify-content-center">
-              <div class="col-md-9 col-lg-8 col-xl-6" id='form-container'>
-                <form id='get-started-form' data-form-email validate>
-                      <div class="form-group">
-                        <label>Your Name *</label>
-                        <input name="name" type="text" class="form-control" required>
-                        <div class="invalid-feedback">
-                          Please type your name.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Email Address *</label>
-                        <input name="email" type="email" placeholder="you@yoursite.com" class="form-control" required>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Company Name *</label>
-                        <input name="company" type="text" class="form-control" required>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Phone Number *</label>
-                        <input name="phone" type="tel" class="form-control" required>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label>Message:</label>
-                        <textarea class="form-control" name="message" rows="10" placeholder="Anything else we can help with?"></textarea>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div id='status'></div>
-                      <button type="submit" class="btn btn-primary" data-loading-text="Sending">
-                        <span class="spinner-border spinner-border-sm" id='spinner' role="status" aria-hidden="true"></span>
-                        <span>Submit</span>
-                      </button>
-       
-                    </div>
+        <div class="container contact-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-8 col-xl-6" id='form-container'>
+              <form id='get-started-form' data-form-email validate>
+                <div class="form-group">
+                  <label>Your Name *</label>
+                  <input name="name" type="text" class="form-control" required>
+                  <div class="invalid-feedback">
+                    Please type your name.
                   </div>
-                </form>
-    
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input name="email" type="email" placeholder="you@yoursite.com" class="form-control" required>
               </div>
             </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Company Name *</label>
+                <input name="company" type="text" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input name="phone" type="tel" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label>Message:</label>
+                <textarea class="form-control" name="message" rows="10"
+                  placeholder="Anything else we can help with?"></textarea>
+              </div>
+            </div>
+            <div class="col">
+              <div id='status'></div>
+              <button type="submit" class="btn btn-primary" data-loading-text="Sending">
+                <span class="spinner-border spinner-border-sm" id='spinner' role="status" aria-hidden="true"></span>
+                <span>Submit</span>
+              </button>
+
+            </div>
           </div>
+          </form>
+
         </div>
       </div>
+    </div>
+    </div>
+    </div>
     </div>
   </section>
   <footer class="pb-4 bg-primary-3 text-light" id="footer">
@@ -597,7 +596,7 @@
   <script type="text/javascript" src="https://leap.mediumra.re/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="https://leap.mediumra.re/assets/js/popper.min.js"></script>
   <script type="text/javascript" src="https://leap.mediumra.re/assets/js/bootstrap.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  
 
   <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
@@ -635,65 +634,13 @@
   <script type="text/javascript" src="https://leap.mediumra.re/assets/js/typed.min.js"></script>
   <!-- Required theme scripts (Do not remove) -->
   <script type="text/javascript" src="https://leap.mediumra.re/assets/js/theme.js"></script>
-
-  <script type="text/javascript">
-    // This script appears only in the demo - it disables forms with no action attribute to prevent 
-    // navigating away from the page.
-    jQuery("form:not([action])").on('submit', function () { return false; });
-  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script type="text/javascript" src='assets/js/smoothscroll.js'></script>
+  <script type="text/javascript" src='assets/js/contact.js'></script>
 
   <script>
     feather.replace()
-
-    const handleSuccess = () => {
-      alert('success');
-    }
-
-    const handleError = () => {
-      alert('error');
-    }
-
-    $( "#get-started-form" ).submit(function( event ) {
-      event.preventDefault();
-
-      const form = document.forms[0];
-      const formData = new FormData(form);
-      const formContainer = document.getElementById('form-container');
-      const formStatus = document.getElementById('status');
-
-      formStatus.innerHTML = '';
-      $('body').addClass('busy');
-
-      const data = {
-        name: formData.get('name'),
-        email: formData.get('email'),
-        company: formData.get('company'),
-        phone: formData.get('phone'),
-        message: formData.get('message') || 'None'
-      }
-
-      // Create the AJAX request
-      const xhr = new XMLHttpRequest();
-      xhr.open("POST", "https://f0e7rqetv5.execute-api.us-east-2.amazonaws.com/Prod/submitForm", true);
-      xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
-      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-
-      // Send the collected data as JSON
-      xhr.send(JSON.stringify(data));
-
-      xhr.onloadend = response => {
-        $('body').removeClass('busy');
-        if (response.target.status === 200) {
-          form.reset();
-          formStatus.innerHTML = `<div class="alert alert-success" role="alert" data-success-message>
-            Thanks, a member of our team will be in touch shortly.
-          </div>`;
-        } else {
-          alert(`An error occurred when submitting your request. (${response.target.status})`);
-        }
-      };  
-
-    });
   </script>
 
 </body>
