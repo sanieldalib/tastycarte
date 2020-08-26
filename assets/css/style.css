@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .navbar-brand {
     font-size: 24px;
 }
@@ -86,3 +91,25 @@
 }
 
 body.busy #spinner { display:inherit !important; }
+
+.covid-text {
+  font-style: italic;
+  margin-bottom: 0px;
+  font-size: 12px !important;
+}
+/* Util classes */
+.margin-right {
+  margin-right: 10px;
+}
+
+.pad-top {
+  padding-top: 16px;
+}
+
+.marigin-section-bottom {
+  padding-bottom: 32px;
+}
+
+.is-primary{
+  color: #fd2d55 !important;
+}
